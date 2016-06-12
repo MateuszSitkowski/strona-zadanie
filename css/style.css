@@ -1,8 +1,8 @@
 .about{
-  background-color: #C02942;
   width: 95%;
   margin: auto;
   display: block;
+  font-family: 'Poiret One', sans-serif;
 }
 .mat-h3{
   font-size: 30px;
@@ -14,35 +14,51 @@
   width: 33.333%;
   max-width: 1200px;
   display: block;
+  margin: 10px auto;
+}
+#background{
+  content: "";
+  clear: both;
+  display: table;
+  background-color: #C02942;
+  padding-top: 10px;
 }
 .mat-list{
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
+  display: block;
   border-radius: 15%;
   color: #ECD078;
-  padding: 0px;
-  float: left;
-  width: 33.333%;
-  height: 300px;
   background-color: #53777A;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  height: 150px;
+  width: 30%;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 0px;
+  float: left;
+  border: solid 1px black;
 }
-/*.clearfix {
+.clearfix::after {
   content: "";
-  display: table;
   clear: both;
-}*/
-.clearfix {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  display: table;
+  background-color: #C02942;
 }
-
+.mat-list:nth-child(odd){
+  width: 31.333%;
+  margin: 1%;
+}
+.mat-list:nth-child(even){
+  width: 31.333%;
+  margin: 1%;
+}
+.mat-p{
+  padding: 5%;
+}
+@media screen and (max-width: 600px) {
+  .mat-list{
+    display: block;
+    width: 100%;
+  }
+}
 
 
 
