@@ -24,7 +24,7 @@
   padding-top: 10px;
 }
 .mat-list{
-  display: block;
+  display: inline-block;
   border-radius: 15%;
   color: #ECD078;
   background-color: #53777A;
